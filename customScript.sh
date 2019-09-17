@@ -23,5 +23,5 @@
 # SOFTWARE.
 
 apt-get install -y nginx
-echo "Azure Custom Extension Script is running now. " $HOSTNAME "!" | sudo tee /var/www/html/index.html
 echo "Installing Kafka Server binary files... " $HOSTNAME "!" 
+echo "Azure Custom Extension Script is running now. " $HOSTNAME "!" | sudo tee /var/www/html/index.html
