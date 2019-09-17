@@ -1,17 +1,3 @@
-
-
-
-
-
-
-
-
-
-
-
-
-
-
 #!/bin/bash
 
 # The MIT License (MIT)
