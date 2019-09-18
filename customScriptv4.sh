@@ -1,11 +1,11 @@
 #!/bin/bash
 
 apt-get install -y nginx
-echo "Kafka Running! " $HOSTNAME "!"  
+echo "Kafka Running! " $HOSTNAME "Cristiano Ronaldo"  
 # | sudo tee /var/www/html/index.html
 
 # Install Oracle Java
-# echo "Installing Java"
+echo "Installing Java"
 
 # redhat java install
 # cd /tmp
