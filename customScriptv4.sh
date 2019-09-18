@@ -3,22 +3,21 @@
 apt-get install -y nginx
 echo "Kafka Running....! " $HOSTNAME "!"  | sudo tee /var/www/html/index.html
 
+# Install Oracle Java
+echo "Installing Java"
 
-# # Install Oracle Java
-# echo "Installing Java"
-
-# # redhat java install
-# # cd /tmp
-# # wget --no-cookies --no-check-certificate --header "Cookie: gpw_e24=http%3A%2F%2Fwww.oracle.com%2F; oraclelicense=accept-securebackup-cookie" "http://download.oracle.com/otn-pub/java/jdk/8u102-b14/jdk-8u102-linux-x64.rpm"
-# # wget --no-cookies --no-check-certificate --header "Cookie: gpw_e24=http%3A%2F%2Fwww.oracle.com%2F; oraclelicense=accept-securebackup-cookie" "http://download.oracle.com/otn-pub/java/jdk/8u102-b14/jre-8u102-linux-x64.rpm"
+# redhat java install
+# cd /tmp
+# wget --no-cookies --no-check-certificate --header "Cookie: gpw_e24=http%3A%2F%2Fwww.oracle.com%2F; oraclelicense=accept-securebackup-cookie" "http://download.oracle.com/otn-pub/java/jdk/8u102-b14/jdk-8u102-linux-x64.rpm"
+# wget --no-cookies --no-check-certificate --header "Cookie: gpw_e24=http%3A%2F%2Fwww.oracle.com%2F; oraclelicense=accept-securebackup-cookie" "http://download.oracle.com/otn-pub/java/jdk/8u102-b14/jre-8u102-linux-x64.rpm"
 
 # #Install packages
 # # rpm -Uvh jdk-8u102-linux-x64.rpm
 # # rpm -Uvh jre-8u102-linux-x64.rpm
 
 # # Install kafka
-# echo "Installing Kafka"
-# name=kafka
+echo "Installing Kafka"
+name=kafka
 # kafkaversion=2.10
 # description="Apache Kafka is a distributed publish-subscribe messaging system."
 # url="https://kafka.apache.org/"
