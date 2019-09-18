@@ -6,7 +6,7 @@ echo "An Azure Custom Extension Script is running now....! " $HOSTNAME "!" | sud
 
 
 # Install Oracle Java
-log "Installing Java"
+echo "Installing Java"
 
 # redhat java install
 # cd /tmp
@@ -18,7 +18,7 @@ log "Installing Java"
 # rpm -Uvh jre-8u102-linux-x64.rpm
 
 # Install kafka
-log "Installing Kafka"
+echo "Installing Kafka"
 name=kafka
 kafkaversion=2.10
 description="Apache Kafka is a distributed publish-subscribe messaging system."
@@ -28,6 +28,8 @@ section="misc"
 license="Apache Software License 2.0"
 package_version="-1"
 download_url=http://mirrors.ukfast.co.uk/sites/ftp.apache.org/kafka/2.3.0/kafka_2.11-2.3.0.tgz
+
+
 
 
 
