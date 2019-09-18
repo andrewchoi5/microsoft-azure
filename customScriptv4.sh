@@ -2,12 +2,12 @@
 
 apt-get install -y nginx
 
-echo "line 1" >> /var/www/html/greetings.txt
-echo "line 2" >> /var/www/html/greetings.txt
+echo "line 1" >> /var/www/html/index.html
+echo "line 2" >> /var/www/html/index.html
 
-echo "Kafka Running! " $HOSTNAME "Cristiano Ronaldo"  >> /var/www/html/greetings.txt
+echo "Kafka Running! " $HOSTNAME "Cristiano Ronaldo"  >> /var/www/html/index.html
 
-sudo tee /var/www/html/greetings.txt
+sudo tee /var/www/html/index.html
 
 # Install Oracle Java
 # echo "Installing Java" | sudo tee /var/www/html/index.html
