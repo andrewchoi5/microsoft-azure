@@ -1,8 +1,7 @@
 #!/bin/bash
 
 apt-get install -y nginx
-echo "Kafka Running....! " $HOSTNAME "!" 
-echo "!!!!!!!!!An Azure Custom Extension Script is running now....! " $HOSTNAME "!" | sudo tee /var/www/html/index.html
+echo "Kafka Running....! " $HOSTNAME "!"  | sudo tee /var/www/html/index.html
 
 
 # # Install Oracle Java
