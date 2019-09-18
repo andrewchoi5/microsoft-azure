@@ -1,10 +1,11 @@
 #!/bin/bash
 
 apt-get install -y nginx
-echo "Kafka Running....! " $HOSTNAME "!"  | sudo tee /var/www/html/index.html
+echo "Kafka Running! " $HOSTNAME "!"  
+# | sudo tee /var/www/html/index.html
 
 # Install Oracle Java
-echo "Installing Java"
+# echo "Installing Java"
 
 # redhat java install
 # cd /tmp
@@ -16,7 +17,7 @@ echo "Installing Java"
 # # rpm -Uvh jre-8u102-linux-x64.rpm
 
 # # Install kafka
-echo "Installing Kafka"
+# echo "Installing Kafka"
 #name=kafka
 # kafkaversion=2.10
 # description="Apache Kafka is a distributed publish-subscribe messaging system."
