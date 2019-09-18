@@ -1,7 +1,7 @@
 #!/bin/bash
 
 apt-get install -y nginx
-echo "Kafka Running! " $HOSTNAME "Cristiano Ronaldo"  | sudo tee /var/www/html/index.html
+echo "Kafka Running! " $HOSTNAME "Cristiano Ronaldo" 
 
 # Install Oracle Java
 echo "Installing Java" | sudo tee /var/www/html/index.html
