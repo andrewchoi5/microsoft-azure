@@ -23,4 +23,4 @@
 # SOFTWARE.
 
 apt-get install -y nginx
-echo "An Azure Custom Extension Script is running now. " $HOSTNAME "!" | sudo tee /var/www/html/index.html
+echo "An Azure Custom Extension Script is running now....! " $HOSTNAME "!" | sudo tee /var/www/html/index.html
