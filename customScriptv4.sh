@@ -2,27 +2,20 @@
 
 apt-get install -y nginx
 
-echo "line 1" >> /var/www/html/index.html
-echo "line 2" >> /var/www/html/index.html
-
-echo "Kafka Running! " $HOSTNAME "Cristiano Ronaldo"  >> /var/www/html/index.html
-
-sudo tee /var/www/html/index.html
-
 # Install Oracle Java
-# echo "Installing Java" | sudo tee /var/www/html/index.html
+echo "Installing Java!" | sudo tee /var/www/html/index.html
 
 # redhat java install
-# cd /tmp
+cd /tmp
 # wget --no-cookies --no-check-certificate --header "Cookie: gpw_e24=http%3A%2F%2Fwww.oracle.com%2F; oraclelicense=accept-securebackup-cookie" "http://download.oracle.com/otn-pub/java/jdk/8u102-b14/jdk-8u102-linux-x64.rpm"
 # wget --no-cookies --no-check-certificate --header "Cookie: gpw_e24=http%3A%2F%2Fwww.oracle.com%2F; oraclelicense=accept-securebackup-cookie" "http://download.oracle.com/otn-pub/java/jdk/8u102-b14/jre-8u102-linux-x64.rpm"
 
 # #Install packages
-# # rpm -Uvh jdk-8u102-linux-x64.rpm
-# # rpm -Uvh jre-8u102-linux-x64.rpm
+# rpm -Uvh jdk-8u102-linux-x64.rpm
+# rpm -Uvh jre-8u102-linux-x64.rpm
 
-# # Install kafka
-# echo "Installing Kafka"
+# Install kafka
+echo "Installing Kafka" | sudo tee /var/www/html/index.html
 #name=kafka
 # kafkaversion=2.10
 # description="Apache Kafka is a distributed publish-subscribe messaging system."
