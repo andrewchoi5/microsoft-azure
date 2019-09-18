@@ -1,26 +1,33 @@
 #!/bin/bash
 
-# The MIT License (MIT)
-#
-# Copyright (c) 2015 Microsoft Azure
-#
-# Permission is hereby granted, free of charge, to any person obtaining a copy
-# of this software and associated documentation files (the "Software"), to deal
-# in the Software without restriction, including without limitation the rights
-# to use, copy, modify, merge, publish, distribute, sublicense, and/or sell
-# copies of the Software, and to permit persons to whom the Software is
-# furnished to do so, subject to the following conditions:
-#
-# The above copyright notice and this permission notice shall be included in all
-# copies or substantial portions of the Software.
-#
-# THE SOFTWARE IS PROVIDED "AS IS", WITHOUT WARRANTY OF ANY KIND, EXPRESS OR
-# IMPLIED, INCLUDING BUT NOT LIMITED TO THE WARRANTIES OF MERCHANTABILITY,
-# FITNESS FOR A PARTICULAR PURPOSE AND NONINFRINGEMENT. IN NO EVENT SHALL THE
-# AUTHORS OR COPYRIGHT HOLDERS BE LIABLE FOR ANY CLAIM, DAMAGES OR OTHER
-# LIABILITY, WHETHER IN AN ACTION OF CONTRACT, TORT OR OTHERWISE, ARISING FROM,
-# OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE
-# SOFTWARE.
-
 apt-get install -y nginx
+echo "Installing Kafka Server now....! " $HOSTNAME "!"
 echo "An Azure Custom Extension Script is running now....! " $HOSTNAME "!" | sudo tee /var/www/html/index.html
+
+
+# Install Oracle Java
+log "Installing Java"
+
+# redhat java install
+# cd /tmp
+# wget --no-cookies --no-check-certificate --header "Cookie: gpw_e24=http%3A%2F%2Fwww.oracle.com%2F; oraclelicense=accept-securebackup-cookie" "http://download.oracle.com/otn-pub/java/jdk/8u102-b14/jdk-8u102-linux-x64.rpm"
+# wget --no-cookies --no-check-certificate --header "Cookie: gpw_e24=http%3A%2F%2Fwww.oracle.com%2F; oraclelicense=accept-securebackup-cookie" "http://download.oracle.com/otn-pub/java/jdk/8u102-b14/jre-8u102-linux-x64.rpm"
+
+#Install packages
+# rpm -Uvh jdk-8u102-linux-x64.rpm
+# rpm -Uvh jre-8u102-linux-x64.rpm
+
+# Install kafka
+log "Installing Kafka"
+name=kafka
+kafkaversion=2.10
+description="Apache Kafka is a distributed publish-subscribe messaging system."
+url="https://kafka.apache.org/"
+arch="all"
+section="misc"
+license="Apache Software License 2.0"
+package_version="-1"
+download_url=http://mirrors.ukfast.co.uk/sites/ftp.apache.org/kafka/2.3.0/kafka_2.11-2.3.0.tgz
+
+
+
