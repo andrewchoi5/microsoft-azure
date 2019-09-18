@@ -17,7 +17,7 @@ echo "Installing Java"
 
 # # Install kafka
 echo "Installing Kafka"
-name=kafka
+#name=kafka
 # kafkaversion=2.10
 # description="Apache Kafka is a distributed publish-subscribe messaging system."
 # url="https://kafka.apache.org/"
